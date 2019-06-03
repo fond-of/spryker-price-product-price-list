@@ -1,4 +1,4 @@
-namespace: fond-of-spryker/price-product-price-list-relationship
+namespace: fond-of-spryker/price-product-price-list
 
 suites:
   unit:

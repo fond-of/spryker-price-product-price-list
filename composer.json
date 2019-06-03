@@ -1,6 +1,6 @@
 {
-  "name": "fond-of-spryker/price-product-price-list-relationship",
-  "description": "Price product price list relationship module",
+  "name": "fond-of-spryker/price-product-price-list",
+  "description": "Price product price list module",
   "license": "MIT",
   "authors": [
     {
