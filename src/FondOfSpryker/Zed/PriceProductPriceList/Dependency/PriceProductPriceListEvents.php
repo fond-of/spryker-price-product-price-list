@@ -6,27 +6,27 @@ interface PriceProductPriceListEvents
 {
     /**
      * Specification:
-     * - This event will be used for spy_price_product_price_list entity creation
+     * - This event will be used for fos_price_product_price_list entity creation
      *
      * @api
      */
-    public const ENTITY_SPY_PRICE_PRODUCT_PRICE_LIST_CREATE = 'Entity.spy_price_product_price_list.create';
+    public const ENTITY_FOS_PRICE_PRODUCT_PRICE_LIST_CREATE = 'Entity.fos_price_product_price_list.create';
 
     /**
      * Specification:
-     * - This event will be used for spy_price_product_price_list entity update
+     * - This event will be used for fos_price_product_price_list entity update
      *
      * @api
      */
-    public const ENTITY_SPY_PRICE_PRODUCT_PRICE_LIST_UPDATE = 'Entity.spy_price_product_price_list.update';
+    public const ENTITY_FOS_PRICE_PRODUCT_PRICE_LIST_UPDATE = 'Entity.fos_price_product_price_list.update';
 
     /**
      * Specification:
-     * - This event will be used for spy_price_product_price_list entity delete
+     * - This event will be used for fos_price_product_price_list entity delete
      *
      * @api
      */
-    public const ENTITY_SPY_PRICE_PRODUCT_PRICE_LIST_DELETE = 'Entity.spy_price_product_price_list.delete';
+    public const ENTITY_FOS_PRICE_PRODUCT_PRICE_LIST_DELETE = 'Entity.fos_price_product_price_list.delete';
 
     /**
      * Specification:

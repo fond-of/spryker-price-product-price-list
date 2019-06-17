@@ -45,6 +45,10 @@
         </index>
 
         <id-method-parameter value="fos_price_product_price_list_pk_seq"/>
+
+        <behavior name="event">
+            <parameter name="fos_price_product_price_list_all" column="*"/>
+        </behavior>
     </table>
 
 </database>
