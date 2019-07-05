@@ -1,6 +1,6 @@
 <?php
 
-namespace FondOfSpryker\Zed\PriceProductPriceList\Persistence\PriceDimensionQueryExpander;
+namespace FondOfSpryker\Zed\PriceProductPriceList\Persistence\Propel\PriceDimensionQueryExpander;
 
 use Generated\Shared\Transfer\PriceProductCriteriaTransfer;
 use Generated\Shared\Transfer\PriceProductDimensionTransfer;
@@ -48,22 +48,27 @@ class PriceListPriceQueryExpander implements PriceListPriceQueryExpanderInterfac
             return [];
         }
 
-        $customerTransfer = $priceProductCriteriaTransfer->getQuote()->getCustomer();
-        if ($customerTransfer === null) {
-            return [];
-        }
-
-        $companyUserTransfer = $customerTransfer->getCompanyUserTransfer();
+        $companyUserTransfer = $priceProductCriteriaTransfer->getQuote()->getCompanyUser();
         if ($companyUserTransfer === null) {
             return [];
         }
 
-        $company = $companyUserTransfer->getCompany();
-        if ($company === null) {
+        $companyBusinessUnitTransfer = $companyUserTransfer->getCompanyBusinessUnit();
+        if ($companyBusinessUnitTransfer === null) {
             return [];
         }
 
-        return [];
+        $companyTransfer = $companyBusinessUnitTransfer->getCompany();
+        if ($companyTransfer === null) {
+            return [];
+        }
+
+        $fkPriceList = $companyTransfer->getFkPriceList();
+        if ($companyTransfer->getFkPriceList() === null) {
+            return [];
+        }
+
+        return [$fkPriceList];
     }
 
     /**

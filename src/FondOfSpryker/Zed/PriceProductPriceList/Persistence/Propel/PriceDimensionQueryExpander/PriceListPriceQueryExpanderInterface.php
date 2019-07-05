@@ -1,6 +1,6 @@
 <?php
 
-namespace FondOfSpryker\Zed\PriceProductPriceList\Persistence\PriceDimensionQueryExpander;
+namespace FondOfSpryker\Zed\PriceProductPriceList\Persistence\Propel\PriceDimensionQueryExpander;
 
 use Generated\Shared\Transfer\PriceProductCriteriaTransfer;
 use Generated\Shared\Transfer\QueryCriteriaTransfer;

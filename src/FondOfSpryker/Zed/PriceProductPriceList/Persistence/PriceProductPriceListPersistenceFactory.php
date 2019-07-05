@@ -2,8 +2,8 @@
 
 namespace FondOfSpryker\Zed\PriceProductPriceList\Persistence;
 
-use FondOfSpryker\Zed\PriceProductPriceList\Persistence\PriceDimensionQueryExpander\PriceListPriceQueryExpander;
-use FondOfSpryker\Zed\PriceProductPriceList\Persistence\PriceDimensionQueryExpander\PriceListPriceQueryExpanderInterface;
+use FondOfSpryker\Zed\PriceProductPriceList\Persistence\Propel\PriceDimensionQueryExpander\PriceListPriceQueryExpander;
+use FondOfSpryker\Zed\PriceProductPriceList\Persistence\Propel\PriceDimensionQueryExpander\PriceListPriceQueryExpanderInterface;
 use Orm\Zed\PriceProductPriceList\Persistence\FosPriceProductPriceListQuery;
 use Spryker\Zed\Kernel\Persistence\AbstractPersistenceFactory;
 
@@ -15,7 +15,7 @@ use Spryker\Zed\Kernel\Persistence\AbstractPersistenceFactory;
 class PriceProductPriceListPersistenceFactory extends AbstractPersistenceFactory
 {
     /**
-     * @return \FondOfSpryker\Zed\PriceProductPriceList\Persistence\PriceDimensionQueryExpander\PriceListPriceQueryExpanderInterface
+     * @return \FondOfSpryker\Zed\PriceProductPriceList\Persistence\Propel\PriceDimensionQueryExpander\PriceListPriceQueryExpanderInterface
      */
     public function createPriceListPriceQueryExpander(): PriceListPriceQueryExpanderInterface
     {
