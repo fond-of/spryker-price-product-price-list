@@ -34,7 +34,7 @@ class PriceProductPriceListDependencyProvider extends AbstractBundleDependencyPr
      */
     protected function addPriceListFacade(Container $container): Container
     {
-        $container[static::FACADE_PRICE_LIST] = function (Container $container) {
+        $container[static::FACADE_PRICE_LIST] = static function (Container $container) {
             return new PriceProductPriceListToPriceListFacadeBridge(
                 $container->getLocator()->priceList()->facade()
             );
@@ -50,7 +50,7 @@ class PriceProductPriceListDependencyProvider extends AbstractBundleDependencyPr
      */
     protected function addPriceProductFacade(Container $container): Container
     {
-        $container[static::FACADE_PRICE_PRODUCT] = function (Container $container) {
+        $container[static::FACADE_PRICE_PRODUCT] = static function (Container $container) {
             return new PriceProductPriceListToPriceProductFacadeBridge(
                 $container->getLocator()->priceProduct()->facade()
             );

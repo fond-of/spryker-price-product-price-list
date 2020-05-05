@@ -98,57 +98,6 @@ class PriceListPriceWriterTest extends Unit
     /**
      * @return void
      */
-    /*
-    public function testPersist(): void
-    {
-        $this->priceProductTransferMock->expects($this->atLeastOnce())
-            ->method('requireMoneyValue')
-            ->willReturn($this->priceProductTransferMock);
-
-        $this->priceProductTransferMock->expects($this->atLeastOnce())
-            ->method('requirePriceDimension')
-            ->willReturn($this->priceProductTransferMock);
-
-        $this->priceProductTransferMock->expects($this->atLeastOnce())
-            ->method('getPriceDimension')
-            ->willReturn($this->priceProductDimensionTransferMock);
-
-        $this->repositoryMock->expects($this->atLeastOnce())
-            ->method('findIdByPriceProductTransfer')
-            ->with($this->priceProductTransferMock)
-            ->willReturn(1);
-
-        $this->priceProductTransferMock->expects($this->atLeastOnce())
-            ->method('getPriceDimension')
-            ->willReturn($this->priceProductDimensionTransferMock);
-
-        $this->priceProductDimensionTransferMock->expects($this->atLeastOnce())
-            ->method('getIdPriceList')
-            ->willReturn(1);
-
-        $this->priceProductTransferMock->expects($this->atLeastOnce())
-            ->method('getMoneyValue')
-            ->willReturn($this->moneyValueTransferMock);
-
-        $this->moneyValueTransferMock->expects($this->atLeastOnce())
-            ->method('getIdEntity')
-            ->willReturn(1);
-
-        $this->priceProductTransferMock->expects($this->atLeastOnce())
-            ->method('getIdProduct')
-            ->willReturn(1);
-
-        $this->entityManagerMock->expects($this->atLeastOnce())
-            ->method('persistEntity')
-            ->willReturn($this->entityTransferInterfaceMock);
-
-        $this->assertInstanceOf(PriceProductTransfer::class, $this->priceListPriceWriter->persist($this->priceProductTransferMock));
-    }
-    */
-
-    /**
-     * @return void
-     */
     public function testDeleteByIdPriceProductStore(): void
     {
         $this->priceListPriceWriter->deleteByIdPriceProductStore(1);
