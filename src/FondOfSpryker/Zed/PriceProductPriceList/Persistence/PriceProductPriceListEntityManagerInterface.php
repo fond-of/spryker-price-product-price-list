@@ -15,8 +15,6 @@ interface PriceProductPriceListEntityManagerInterface
      *
      * @param \Generated\Shared\Transfer\FosPriceProductPriceListEntityTransfer $priceProductPriceListEntityTransfer
      *
-     * @throws
-     *
      * @return \Spryker\Shared\Kernel\Transfer\EntityTransferInterface
      */
     public function persistEntity(

@@ -17,8 +17,6 @@ class PriceProductPriceListEntityManager extends AbstractEntityManager implement
      *
      * @param \Generated\Shared\Transfer\FosPriceProductPriceListEntityTransfer $priceProductPriceListEntityTransfer
      *
-     * @throws
-     *
      * @return \Spryker\Shared\Kernel\Transfer\EntityTransferInterface
      */
     public function persistEntity(
@@ -43,8 +41,6 @@ class PriceProductPriceListEntityManager extends AbstractEntityManager implement
     /**
      * @param int $idPriceProductStore
      *
-     * @throws
-     *
      * @return void
      */
     public function deleteByIdPriceProductStore(int $idPriceProductStore): void
@@ -59,8 +55,6 @@ class PriceProductPriceListEntityManager extends AbstractEntityManager implement
 
     /**
      * @param \Orm\Zed\PriceProductPriceList\Persistence\FosPriceProductPriceList[]|\Propel\Runtime\Collection\ObjectCollection $priceProductPriceListEntities
-     *
-     * @throws
      *
      * @return void
      */

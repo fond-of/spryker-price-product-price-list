@@ -13,7 +13,7 @@ use Spryker\Zed\Kernel\Persistence\AbstractRepository;
 class PriceProductPriceListRepository extends AbstractRepository implements PriceProductPriceListRepositoryInterface
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @param \Generated\Shared\Transfer\PriceProductCriteriaTransfer $priceProductCriteriaTransfer
      *
@@ -28,15 +28,13 @@ class PriceProductPriceListRepository extends AbstractRepository implements Pric
     }
 
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @param \Generated\Shared\Transfer\PriceProductTransfer $priceProductTransfer
      *
-     * @throws
-     *
-     * @return int|null
+     * @return string|null
      */
-    public function findIdByPriceProductTransfer(PriceProductTransfer $priceProductTransfer): ?int
+    public function findIdByPriceProductTransfer(PriceProductTransfer $priceProductTransfer): ?string
     {
         $query = $this->getFactory()
             ->createPriceProductPriceListQuery()

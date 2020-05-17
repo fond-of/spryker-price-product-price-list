@@ -27,9 +27,7 @@ interface PriceProductPriceListRepositoryInterface
      *
      * @param \Generated\Shared\Transfer\PriceProductTransfer $priceProductTransfer
      *
-     * @throws
-     *
-     * @return int|null
+     * @return string|null
      */
-    public function findIdByPriceProductTransfer(PriceProductTransfer $priceProductTransfer): ?int;
+    public function findIdByPriceProductTransfer(PriceProductTransfer $priceProductTransfer): ?string;
 }

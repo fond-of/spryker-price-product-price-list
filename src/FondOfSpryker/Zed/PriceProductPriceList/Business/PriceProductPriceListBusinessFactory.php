@@ -29,8 +29,6 @@ class PriceProductPriceListBusinessFactory extends AbstractBusinessFactory
     }
 
     /**
-     * @throws
-     *
      * @return \FondOfSpryker\Zed\PriceProductPriceList\Dependency\Facade\PriceProductPriceListToPriceListFacadeInterface
      */
     protected function getPriceListFacade(): PriceProductPriceListToPriceListFacadeInterface
@@ -51,8 +49,6 @@ class PriceProductPriceListBusinessFactory extends AbstractBusinessFactory
     }
 
     /**
-     * @throws
-     *
      * @return \FondOfSpryker\Zed\PriceProductPriceList\Dependency\Facade\PriceProductPriceListToPriceProductFacadeInterface
      */
     protected function getPriceProductFacade(): PriceProductPriceListToPriceProductFacadeInterface
