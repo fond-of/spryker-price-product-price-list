@@ -16,11 +16,11 @@ class PriceListPriceDimensionConcreteWriterPlugin extends AbstractPlugin impleme
     /**
      * {@inheritDoc}
      *
+     * @api
+     *
      * @param \Generated\Shared\Transfer\PriceProductTransfer $priceProductTransfer
      *
      * @return \Generated\Shared\Transfer\PriceProductTransfer
-     * @api
-     *
      */
     public function savePrice(PriceProductTransfer $priceProductTransfer): PriceProductTransfer
     {
@@ -30,9 +30,9 @@ class PriceListPriceDimensionConcreteWriterPlugin extends AbstractPlugin impleme
     /**
      * {@inheritDoc}
      *
-     * @return string
      * @api
      *
+     * @return string
      */
     public function getDimensionName(): string
     {

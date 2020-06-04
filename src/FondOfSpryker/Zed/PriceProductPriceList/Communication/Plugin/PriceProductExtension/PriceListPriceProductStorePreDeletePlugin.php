@@ -14,15 +14,14 @@ class PriceListPriceProductStorePreDeletePlugin extends AbstractPlugin implement
     /**
      * {@inheritDoc}
      *
+     * @api
+     *
      * @param int $idPriceProductStore
      *
      * @return void
-     * @api
-     *
      */
     public function preDelete(int $idPriceProductStore): void
     {
-        $this->getFacade()
-            ->deletePriceProductPriceListByIdPriceProductStore($idPriceProductStore);
+        $this->getFacade()->deletePriceProductPriceListByIdPriceProductStore($idPriceProductStore);
     }
 }

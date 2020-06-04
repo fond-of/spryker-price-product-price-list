@@ -38,6 +38,7 @@ class PriceListPriceProductFilterPlugin extends AbstractPlugin implements PriceP
 
             if ($minPriceProductTransfer === null || !$this->hasPriceByPriceMode($minPriceProductTransfer, $priceProductFilterTransfer->getPriceMode())) {
                 $minPriceProductTransfer = $priceProductTransfer;
+
                 continue;
             }
 
@@ -63,6 +64,7 @@ class PriceListPriceProductFilterPlugin extends AbstractPlugin implements PriceP
                 $resultPriceProductTransfers[] = $priceProductTransfer;
             }
         }
+
         return $resultPriceProductTransfers;
     }
 

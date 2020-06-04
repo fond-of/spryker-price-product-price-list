@@ -13,7 +13,7 @@ use Spryker\Zed\Kernel\Persistence\AbstractEntityManager;
 class PriceProductPriceListEntityManager extends AbstractEntityManager implements PriceProductPriceListEntityManagerInterface
 {
     /**
-     * {@inheritdoc}
+     * {@inheritDoc}
      *
      * @param \Generated\Shared\Transfer\FosPriceProductPriceListEntityTransfer $priceProductPriceListEntityTransfer
      *

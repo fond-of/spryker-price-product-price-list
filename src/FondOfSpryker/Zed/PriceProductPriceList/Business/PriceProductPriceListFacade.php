@@ -16,11 +16,11 @@ class PriceProductPriceListFacade extends AbstractFacade implements PriceProduct
     /**
      * {@inheritDoc}
      *
+     * @api
+     *
      * @param \Generated\Shared\Transfer\PriceProductDimensionTransfer $priceProductDimensionTransfer
      *
      * @return \Generated\Shared\Transfer\PriceProductDimensionTransfer
-     * @api
-     *
      */
     public function expandPriceProductDimension(PriceProductDimensionTransfer $priceProductDimensionTransfer): PriceProductDimensionTransfer
     {
@@ -32,11 +32,11 @@ class PriceProductPriceListFacade extends AbstractFacade implements PriceProduct
     /**
      * {@inheritDoc}
      *
+     * @api
+     *
      * @param \Generated\Shared\Transfer\PriceProductTransfer $priceProductTransfer
      *
      * @return \Generated\Shared\Transfer\PriceProductTransfer
-     * @api
-     *
      */
     public function savePriceProductPriceList(PriceProductTransfer $priceProductTransfer): PriceProductTransfer
     {
