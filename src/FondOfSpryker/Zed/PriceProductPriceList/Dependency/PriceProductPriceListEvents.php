@@ -34,7 +34,7 @@ interface PriceProductPriceListEvents
      *
      * @api
      */
-    public const PRICE_ABSTRACT_PUBLISH = 'Price.price_abstract.publish';
+    public const PRICE_PRODUCT_ABSTRACT_PRICE_LIST_PUBLISH = 'PriceProductPriceList.price_product_abstract_price_list.publish';
 
     /**
      * Specification:
@@ -42,7 +42,7 @@ interface PriceProductPriceListEvents
      *
      * @api
      */
-    public const PRICE_ABSTRACT_UNPUBLISH = 'Price.price_abstract.unpublish';
+    public const PRICE_PRODUCT_ABSTRACT_PRICE_LIST_UNPUBLISH = 'PriceProductPriceList.price_product_abstract_price_list.unpublish';
 
     /**
      * Specification:
@@ -50,7 +50,7 @@ interface PriceProductPriceListEvents
      *
      * @api
      */
-    public const PRICE_CONCRETE_PUBLISH = 'Price.price_concrete.publish';
+    public const PRICE_PRODUCT_CONCRETE_PRICE_LIST_PUBLISH = 'PriceProductPriceList.price_product_concrete_price_list.publish.publish';
 
     /**
      * Specification:
@@ -58,7 +58,7 @@ interface PriceProductPriceListEvents
      *
      * @api
      */
-    public const PRICE_CONCRETE_UNPUBLISH = 'Price.price_concrete.unpublish';
+    public const PRICE_PRODUCT_CONCRETE_PRICE_LIST_UNPUBLISH = 'PriceProductPriceList.price_product_concrete_price_list.unpublish';
 
     /**
      * Specification:
