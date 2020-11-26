@@ -63,8 +63,6 @@ class PriceProductPriceListRepository extends AbstractRepository implements Pric
     /**
      * {@inheritDoc}
      *
-     * @param \Generated\Shared\Transfer\PriceProductCriteriaTransfer $priceProductCriteriaTransfer
-     *
      * @return \Generated\Shared\Transfer\QueryCriteriaTransfer
      */
     public function buildUnconditionalPriceListPriceDimensionCriteria(): QueryCriteriaTransfer
