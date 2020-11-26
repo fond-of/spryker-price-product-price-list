@@ -22,6 +22,14 @@ interface PriceProductPriceListRepositoryInterface
 
     /**
      * Specification:
+     * - Build unconditional price list price dimension criteria.
+     *
+     * @return \Generated\Shared\Transfer\QueryCriteriaTransfer
+     */
+    public function buildUnconditionalPriceListPriceDimensionCriteria(): QueryCriteriaTransfer;
+
+    /**
+     * Specification:
      * - Returns an ID by PriceProductTransfer.
      * - Returns null in case a record is not found.
      *

@@ -12,6 +12,11 @@ use Propel\Runtime\ActiveQuery\Criteria;
 class PriceListPriceQueryExpander implements PriceListPriceQueryExpanderInterface
 {
     /**
+     * @uses \Orm\Zed\PriceProduct\Persistence\Map\SpyPriceProductStoreTableMap::COL_ID_PRICE_PRODUCT_STORE
+     */
+    public const COL_ID_PRICE_PRODUCT_STORE = 'spy_price_product_store.id_price_product_store';
+
+    /**
      * @param \Generated\Shared\Transfer\PriceProductCriteriaTransfer $priceProductCriteriaTransfer
      *
      * @return \Generated\Shared\Transfer\QueryCriteriaTransfer|null
@@ -35,6 +40,22 @@ class PriceListPriceQueryExpander implements PriceListPriceQueryExpanderInterfac
         }
 
         return $this->createQueryCriteriaTransfer($idPriceListIds);
+    }
+
+    /**
+     * @return \Generated\Shared\Transfer\QueryCriteriaTransfer
+     */
+    public function buildUnconditionalMerchantRelationshipPriceDimensionQueryCriteria(): QueryCriteriaTransfer
+    {
+        return (new QueryCriteriaTransfer())
+            ->setWithColumns([
+                FosPriceProductPriceListTableMap::COL_FK_PRICE_LIST => PriceProductDimensionTransfer::ID_PRICE_LIST,
+            ])->addJoin(
+                (new QueryJoinTransfer())
+                    ->setLeft([static::COL_ID_PRICE_PRODUCT_STORE])
+                    ->setRight([FosPriceProductPriceListTableMap::COL_FK_PRICE_PRODUCT_STORE])
+                    ->setJoinType(Criteria::LEFT_JOIN)
+            );
     }
 
     /**

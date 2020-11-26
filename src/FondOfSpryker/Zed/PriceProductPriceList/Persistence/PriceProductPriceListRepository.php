@@ -59,4 +59,18 @@ class PriceProductPriceListRepository extends AbstractRepository implements Pric
 
         return $entity->getIdPriceProductPriceList();
     }
+
+    /**
+     * {@inheritDoc}
+     *
+     * @param \Generated\Shared\Transfer\PriceProductCriteriaTransfer $priceProductCriteriaTransfer
+     *
+     * @return \Generated\Shared\Transfer\QueryCriteriaTransfer
+     */
+    public function buildUnconditionalPriceListPriceDimensionCriteria(): QueryCriteriaTransfer
+    {
+        return $this->getFactory()
+            ->createPriceListPriceQueryExpander()
+            ->buildUnconditionalMerchantRelationshipPriceDimensionQueryCriteria();
+    }
 }
