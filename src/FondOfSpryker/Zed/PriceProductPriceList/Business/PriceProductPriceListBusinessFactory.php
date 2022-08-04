@@ -24,7 +24,7 @@ class PriceProductPriceListBusinessFactory extends AbstractBusinessFactory
     public function createPriceProductDimensionExpander(): PriceProductDimensionExpanderInterface
     {
         return new PriceProductDimensionExpander(
-            $this->getPriceListFacade()
+            $this->getPriceListFacade(),
         );
     }
 
@@ -44,7 +44,7 @@ class PriceProductPriceListBusinessFactory extends AbstractBusinessFactory
         return new PriceListPriceWriter(
             $this->getPriceProductFacade(),
             $this->getRepository(),
-            $this->getEntityManager()
+            $this->getEntityManager(),
         );
     }
 

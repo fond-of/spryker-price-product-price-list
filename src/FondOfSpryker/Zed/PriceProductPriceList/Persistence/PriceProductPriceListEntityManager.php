@@ -32,7 +32,7 @@ class PriceProductPriceListEntityManager extends AbstractEntityManager implement
         $priceProductPriceListEntity->save();
 
         $priceProductPriceListEntityTransfer->setIdPriceProductPriceList(
-            $priceProductPriceListEntity->getIdPriceProductPriceList()
+            $priceProductPriceListEntity->getIdPriceProductPriceList(),
         );
 
         return $priceProductPriceListEntityTransfer;
@@ -54,7 +54,7 @@ class PriceProductPriceListEntityManager extends AbstractEntityManager implement
     }
 
     /**
-     * @param \Orm\Zed\PriceProductPriceList\Persistence\FosPriceProductPriceList[]|\Propel\Runtime\Collection\ObjectCollection $priceProductPriceListEntities
+     * @param \Propel\Runtime\Collection\ObjectCollection<\Orm\Zed\PriceProductPriceList\Persistence\FosPriceProductPriceList> $priceProductPriceListEntities
      *
      * @return void
      */

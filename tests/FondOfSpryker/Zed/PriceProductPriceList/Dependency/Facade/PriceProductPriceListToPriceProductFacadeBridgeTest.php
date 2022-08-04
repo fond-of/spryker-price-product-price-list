@@ -39,7 +39,7 @@ class PriceProductPriceListToPriceProductFacadeBridgeTest extends Unit
             ->getMock();
 
         $this->priceProductPriceListToPriceProductFacadeBridgeTest = new PriceProductPriceListToPriceProductFacadeBridge(
-            $this->priceProductFacadeMock
+            $this->priceProductFacadeMock,
         );
     }
 

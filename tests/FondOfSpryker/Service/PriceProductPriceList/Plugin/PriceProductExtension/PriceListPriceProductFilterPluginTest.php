@@ -92,7 +92,6 @@ class PriceListPriceProductFilterPluginTest extends Unit
      */
     public function testFilterConditionOne(): void
     {
-
         $this->priceProductTransferMock->expects($this->atLeastOnce())
             ->method('getPriceDimension')
             ->willReturn($this->priceProductDimensionTransferMock);

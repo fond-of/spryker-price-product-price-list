@@ -37,8 +37,8 @@ class PriceProductPriceListDependencyProviderTest extends Unit
         $this->assertInstanceOf(
             Container::class,
             $this->priceProductPriceListDependencyProvider->provideBusinessLayerDependencies(
-                $this->containerMock
-            )
+                $this->containerMock,
+            ),
         );
     }
 }

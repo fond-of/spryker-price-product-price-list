@@ -66,8 +66,8 @@ class PriceListPriceQueryCriteriaPluginTest extends Unit
         static::assertEquals(
             $this->queryCriteriaTransferMock,
             $this->priceListPriceQueryCriteriaPlugin->buildPriceDimensionQueryCriteria(
-                $this->priceProductCriteriaTransferMock
-            )
+                $this->priceProductCriteriaTransferMock,
+            ),
         );
     }
 
@@ -77,12 +77,12 @@ class PriceListPriceQueryCriteriaPluginTest extends Unit
     public function testBuildUnconditionalPriceDimensionQueryCriteria(): void
     {
         $this->priceProductPriceListRepositoryMock->expects(static::atLeastOnce())
-            ->method('buildUnconditionalPriceDimensionQueryCriteria')
+            ->method('buildUnconditionalPriceListPriceDimensionCriteria')
             ->willReturn($this->queryCriteriaTransferMock);
 
         static::assertEquals(
             $this->queryCriteriaTransferMock,
-            $this->priceListPriceQueryCriteriaPlugin->buildUnconditionalPriceDimensionQueryCriteria()
+            $this->priceListPriceQueryCriteriaPlugin->buildUnconditionalPriceDimensionQueryCriteria(),
         );
     }
 
@@ -93,7 +93,7 @@ class PriceListPriceQueryCriteriaPluginTest extends Unit
     {
         static::assertSame(
             PriceProductPriceListConstants::PRICE_DIMENSION_PRICE_LIST,
-            $this->priceListPriceQueryCriteriaPlugin->getDimensionName()
+            $this->priceListPriceQueryCriteriaPlugin->getDimensionName(),
         );
     }
 }
