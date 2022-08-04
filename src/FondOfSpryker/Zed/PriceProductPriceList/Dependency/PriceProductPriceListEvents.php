@@ -9,6 +9,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for fos_price_product_price_list entity creation
      *
      * @api
+     *
+     * @var string
      */
     public const ENTITY_FOS_PRICE_PRODUCT_PRICE_LIST_CREATE = 'Entity.fos_price_product_price_list.create';
 
@@ -17,6 +19,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for fos_price_product_price_list entity update
      *
      * @api
+     *
+     * @var string
      */
     public const ENTITY_FOS_PRICE_PRODUCT_PRICE_LIST_UPDATE = 'Entity.fos_price_product_price_list.update';
 
@@ -25,6 +29,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for fos_price_product_price_list entity delete
      *
      * @api
+     *
+     * @var string
      */
     public const ENTITY_FOS_PRICE_PRODUCT_PRICE_LIST_DELETE = 'Entity.fos_price_product_price_list.delete';
 
@@ -33,6 +39,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for price_abstract publishing
      *
      * @api
+     *
+     * @var string
      */
     public const PRICE_PRODUCT_ABSTRACT_PRICE_LIST_PUBLISH = 'PriceProductPriceList.price_product_abstract_price_list.publish';
 
@@ -41,6 +49,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for price_abstract un-publishing
      *
      * @api
+     *
+     * @var string
      */
     public const PRICE_PRODUCT_ABSTRACT_PRICE_LIST_UNPUBLISH = 'PriceProductPriceList.price_product_abstract_price_list.unpublish';
 
@@ -49,6 +59,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for price_concrete publishing
      *
      * @api
+     *
+     * @var string
      */
     public const PRICE_PRODUCT_CONCRETE_PRICE_LIST_PUBLISH = 'PriceProductPriceList.price_product_concrete_price_list.publish.publish';
 
@@ -57,6 +69,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for price_concrete un-publishing
      *
      * @api
+     *
+     * @var string
      */
     public const PRICE_PRODUCT_CONCRETE_PRICE_LIST_UNPUBLISH = 'PriceProductPriceList.price_product_concrete_price_list.unpublish';
 
@@ -65,6 +79,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for spy_price_product entity creation
      *
      * @api
+     *
+     * @var string
      */
     public const ENTITY_SPY_PRICE_PRODUCT_CREATE = 'Entity.spy_price_product.create';
 
@@ -73,6 +89,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for spy_price_product entity changes
      *
      * @api
+     *
+     * @var string
      */
     public const ENTITY_SPY_PRICE_PRODUCT_UPDATE = 'Entity.spy_price_product.update';
 
@@ -81,6 +99,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for spy_price_product entity deletion
      *
      * @api
+     *
+     * @var string
      */
     public const ENTITY_SPY_PRICE_PRODUCT_DELETE = 'Entity.spy_price_product.delete';
 
@@ -89,6 +109,8 @@ interface PriceProductPriceListEvents
      * - This event will be use:d for spy_price_product_store entity creation
      *
      * @api
+     *
+     * @var string
      */
     public const ENTITY_SPY_PRICE_PRODUCT_STORE_CREATE = 'Entity.spy_price_product_store.create';
 
@@ -97,6 +119,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for spy_price_product_store entity changes
      *
      * @api
+     *
+     * @var string
      */
     public const ENTITY_SPY_PRICE_PRODUCT_STORE_UPDATE = 'Entity.spy_price_product_store.update';
 
@@ -105,6 +129,8 @@ interface PriceProductPriceListEvents
      * - This event will be used for spy_price_product_store entity deletion
      *
      * @api
+     *
+     * @var string
      */
     public const ENTITY_SPY_PRICE_PRODUCT_STORE_DELETE = 'Entity.spy_price_product_store.delete';
 }

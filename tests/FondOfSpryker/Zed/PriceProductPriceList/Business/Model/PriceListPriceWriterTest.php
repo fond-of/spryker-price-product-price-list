@@ -91,7 +91,7 @@ class PriceListPriceWriterTest extends Unit
         $this->priceListPriceWriter = new PriceListPriceWriter(
             $this->priceProductFacadeMock,
             $this->repositoryMock,
-            $this->entityManagerMock
+            $this->entityManagerMock,
         );
     }
 

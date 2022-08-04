@@ -13,6 +13,8 @@ class PriceListPriceQueryExpander implements PriceListPriceQueryExpanderInterfac
 {
     /**
      * @uses \Orm\Zed\PriceProduct\Persistence\Map\SpyPriceProductStoreTableMap::COL_ID_PRICE_PRODUCT_STORE
+     *
+     * @var string
      */
     public const COL_ID_PRICE_PRODUCT_STORE = 'spy_price_product_store.id_price_product_store';
 
@@ -54,7 +56,7 @@ class PriceListPriceQueryExpander implements PriceListPriceQueryExpanderInterfac
                 (new QueryJoinTransfer())
                     ->setLeft([static::COL_ID_PRICE_PRODUCT_STORE])
                     ->setRight([FosPriceProductPriceListTableMap::COL_FK_PRICE_PRODUCT_STORE])
-                    ->setJoinType(Criteria::LEFT_JOIN)
+                    ->setJoinType(Criteria::LEFT_JOIN),
             );
     }
 
@@ -93,7 +95,7 @@ class PriceListPriceQueryExpander implements PriceListPriceQueryExpanderInterfac
     }
 
     /**
-     * @param int[] $priceListIds
+     * @param array<int> $priceListIds
      *
      * @return \Generated\Shared\Transfer\QueryCriteriaTransfer
      */
@@ -107,7 +109,7 @@ class PriceListPriceQueryExpander implements PriceListPriceQueryExpanderInterfac
                     ->setRelation('PriceProductPriceList')
                     ->setCondition(FosPriceProductPriceListTableMap::COL_FK_PRICE_LIST
                         . ' IN (' . implode(',', $priceListIds) . ')')
-                    ->setJoinType(Criteria::LEFT_JOIN)
+                    ->setJoinType(Criteria::LEFT_JOIN),
             );
     }
 }

@@ -9,7 +9,14 @@ use Spryker\Zed\Kernel\Container;
 
 class PriceProductPriceListDependencyProvider extends AbstractBundleDependencyProvider
 {
+    /**
+     * @var string
+     */
     public const FACADE_PRICE_LIST = 'FACADE_PRICE_LIST';
+
+    /**
+     * @var string
+     */
     public const FACADE_PRICE_PRODUCT = 'FACADE_PRICE_PRODUCT';
 
     /**
@@ -36,7 +43,7 @@ class PriceProductPriceListDependencyProvider extends AbstractBundleDependencyPr
     {
         $container[static::FACADE_PRICE_LIST] = static function (Container $container) {
             return new PriceProductPriceListToPriceListFacadeBridge(
-                $container->getLocator()->priceList()->facade()
+                $container->getLocator()->priceList()->facade(),
             );
         };
 
@@ -52,7 +59,7 @@ class PriceProductPriceListDependencyProvider extends AbstractBundleDependencyPr
     {
         $container[static::FACADE_PRICE_PRODUCT] = static function (Container $container) {
             return new PriceProductPriceListToPriceProductFacadeBridge(
-                $container->getLocator()->priceProduct()->facade()
+                $container->getLocator()->priceProduct()->facade(),
             );
         };
 

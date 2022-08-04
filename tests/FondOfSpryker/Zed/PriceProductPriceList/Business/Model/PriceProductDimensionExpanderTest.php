@@ -50,7 +50,7 @@ class PriceProductDimensionExpanderTest extends Unit
             ->getMock();
 
         $this->priceProductDimensionExpander = new PriceProductDimensionExpander(
-            $this->priceListFacadeMock
+            $this->priceListFacadeMock,
         );
     }
 
@@ -78,7 +78,7 @@ class PriceProductDimensionExpanderTest extends Unit
 
         $this->priceListTransferMock->expects($this->atLeastOnce())
             ->method('getName')
-            ->willReturn("name");
+            ->willReturn('name');
 
         $this->assertInstanceOf(PriceProductDimensionTransfer::class, $this->priceProductDimensionExpander->expand($this->priceProductDimensionTransferMock));
     }
